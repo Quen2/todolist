@@ -7,10 +7,7 @@ import {TaskType} from "@/Types/TaskType";
 const data = {
     tasks: [
         { id: '1', title: 'Buy fresh sourdough bread and farm eggs', completed: false },
-        { id: '2', title: 'Draft quarterly marketing review slides', completed: false },
-        { id: '3', title: 'Gym session: leg day workout', completed: true },
-        { id: '4', title: 'Review feedback on design system V2', completed: false },
-        { id: '5', title: 'Schedule dental clean appointment', completed: true },
+        { id: '2', title: 'Draft quarterly marketing review slides', completed: true },
     ]
 }
 

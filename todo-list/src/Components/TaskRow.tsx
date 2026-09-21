@@ -37,9 +37,12 @@ export default function TaskRow(props: {
                     <Text style={[styles.title, props.task.completed && styles.titleCompleted]}>
                         {props.task.title}
                     </Text>
-                    <Pressable onPress={() => setModifying(true)}>
-                        <Modify width={12} height={12} color="#1E1E1E"/>
-                    </Pressable>
+                    {
+                        !props.task.completed &&
+                        <Pressable onPress={() => setModifying(true)}>
+                            <Modify width={12} height={12} color="#1E1E1E"/>
+                        </Pressable>
+                    }
                 </>
             }
             <Pressable onPress={() => props.onDelete(props.task.id)}>
