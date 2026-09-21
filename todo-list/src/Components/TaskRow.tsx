@@ -21,7 +21,7 @@ export default function TaskRow(props: {
     }
 
     return (
-        <View style={styles.container} className="px-[24px] pt-[24px] pb-[48px]">
+        <View style={styles.container}>
             <Checkbox
                 value={props.task.completed}
                 onValueChange={() => props.onToggle(props.task.id)}
@@ -55,7 +55,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        gap: 32
+        gap: 12,
+        borderBottomWidth: 1,
+        borderBottomColor: "#F3F4F6",
+        paddingHorizontal: 16,
+        paddingVertical: 14
     },
     title: {
         fontFamily: 'Poppins-Regular',

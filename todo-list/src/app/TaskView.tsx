@@ -35,7 +35,7 @@ export default function TaskView() {
     }
 
     return (
-        <View>
+        <View className="flex flex-col gap-8">
             <AddTaskForm addTask={addTask} />
             <TaskList tasks={tasks} onToggle={toggleTask} onDelete={deleteTask} onModify={modifyTask}/>
         </View>

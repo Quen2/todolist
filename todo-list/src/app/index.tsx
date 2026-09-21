@@ -4,7 +4,7 @@ import TaskView from "@/app/TaskView";
 
 export default function Index() {
   return (
-    <View className="bg-white h-full px-[24px] pt-[24px] pb-[48px] gap-8">
+    <View className="h-full flex bg-white px-[24px] pt-[24px] pb-[48px] gap-8">
         <Header />
         <TaskView />
     </View>
